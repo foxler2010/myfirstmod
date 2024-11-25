@@ -15,6 +15,9 @@ public class ModItems {
   public static final DeferredRegister<Item> ITEMS =
           DeferredRegister.create(ForgeRegistries.ITEMS, MyFirstMod.MOD_ID);
   
+  public static final RegistryObject<Item> RAW_SMILES = ITEMS.register("raw_smiles",
+          () -> new Item(new Item.Properties()));
+  
   public static final RegistryObject<Item> SMILEY = ITEMS.register("smiley",
           () -> new Item(new Item.Properties()));
   

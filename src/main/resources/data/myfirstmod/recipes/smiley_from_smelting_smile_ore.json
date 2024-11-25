@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "smiley",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "myfirstmod:smile_ore"
+  },
+  "result": {
+    "id": "myfirstmod:smiley"
+  }
+}

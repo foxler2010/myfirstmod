@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "smiley",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "myfirstmod:deep_fried_smiley"
+      }
+    ]
+  },
+  "result": {
+    "id": "myfirstmod:deep_fried_smiley_block"
+  }
+}

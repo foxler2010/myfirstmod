@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "smiley",
+  "ingredients": [
+    {
+      "item": "myfirstmod:smiley_block"
+    }
+  ],
+  "result": {
+    "id": "myfirstmod:smiley",
+    "count": 9
+  }
+}

@@ -1,10 +1,12 @@
 package top.drewssite.myfirstmod.block;
 
 import java.util.function.Supplier;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,16 +24,25 @@ public class ModBlocks {
   public static final DeferredRegister<Block> BLOCKS =
           DeferredRegister.create(ForgeRegistries.BLOCKS, MyFirstMod.MOD_ID);
   
-  public static final RegistryObject<Block> SMILEY_BLOCK = registerBlock("smiley_block",
-          () -> new Block(BlockBehaviour.Properties
-                  .ofFullCopy(Blocks.IRON_BLOCK)
-                  .sound(SoundType.AMETHYST)));
+  public static final RegistryObject<Block> SMILEY_BLOCK =
+          registerBlock("smiley_block",
+                  () -> new Block(BlockBehaviour.Properties
+                          .ofFullCopy(Blocks.IRON_BLOCK)
+                          .sound(SoundType.AMETHYST)));
   
   public static final RegistryObject<Block> DEEP_FRIED_SMILEY_BLOCK =
           registerBlock("deep_fried_smiley_block",
                   () -> new Block(BlockBehaviour.Properties
                           .ofFullCopy(Blocks.IRON_BLOCK)
                           .sound(SoundType.AMETHYST)));
+  
+  public static final RegistryObject<Block> SMILE_ORE =
+          registerBlock("smile_ore",
+                  () -> new DropExperienceBlock(UniformInt.of(3, 6),
+                          BlockBehaviour.Properties
+                                  .ofFullCopy(Blocks.STONE)
+                                  .strength(2f)
+                                  .requiresCorrectToolForDrops()));
   
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
     

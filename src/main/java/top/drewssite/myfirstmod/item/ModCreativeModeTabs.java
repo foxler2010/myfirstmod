@@ -24,10 +24,12 @@ public class ModCreativeModeTabs {
                   .icon(() -> new ItemStack(ModItems.SMILEY.get()))
                   .title(Component.translatable("creativetab.myfirstmod_tab"))
                   .displayItems((parameters, output) -> {
+                    output.accept(ModItems.RAW_SMILES.get());
                     output.accept(ModItems.SMILEY.get());
                     output.accept(ModItems.DEEP_FRIED_SMILEY.get());
                     output.accept(ModBlocks.SMILEY_BLOCK.get());
                     output.accept(ModBlocks.DEEP_FRIED_SMILEY_BLOCK.get());
+                    output.accept(ModBlocks.SMILE_ORE.get());
                   })
                   .build());
   

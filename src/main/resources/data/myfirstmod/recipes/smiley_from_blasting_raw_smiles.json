@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "group": "smiley",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "myfirstmod:raw_smiles"
+  },
+  "result": {
+    "id": "myfirstmod:smiley"
+  }
+}
